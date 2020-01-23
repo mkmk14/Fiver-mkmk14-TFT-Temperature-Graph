@@ -85,6 +85,7 @@ void checkBackButton()
         screen = scr_main;
         drawMain();
         Serial.print("Back button pressed");
+        delay(100);     
       }
     }
   }
@@ -104,6 +105,7 @@ void checkMainButton()
         screen = scr_lu;
         drawBackButton();
         Serial.println("Left up sensor is pressed for graph");
+        delay(100);
       }
 
       if ((x >= 170) && (x <= 290) && (y >= 40) && (y <= 120))
@@ -111,6 +113,7 @@ void checkMainButton()
         screen = scr_ru;
         drawBackButton();
         Serial.println("Right up sensor is pressed for graph");
+        delay(100);
       }
 
       if ((x >= 30) && (x <= 150) && (y >= 140) && (y <= 220))
@@ -118,6 +121,7 @@ void checkMainButton()
         screen = scr_ld;
         drawBackButton();
         Serial.println("left down sensor is pressed for graph");
+        delay(100);
       }
 
       if ((x >= 170) && (x <= 290) && (y >= 140) && (y <= 220))
@@ -125,6 +129,7 @@ void checkMainButton()
         screen = scr_rd;
         drawBackButton();
         Serial.println("Right down sensor is pressed for graph");
+        delay(100);
       }
     }
   }
