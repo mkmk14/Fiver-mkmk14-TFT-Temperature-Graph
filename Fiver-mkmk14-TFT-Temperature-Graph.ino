@@ -54,7 +54,7 @@
 #define DKPURPLE  0x4010
 #define DKGREY    0x4A49
 
-#define arlen 320
+#define arlen 100
 
 OneWire oneWire(ONE_WIRE_BUS);
 DallasTemperature sensors(&oneWire);
