@@ -123,48 +123,47 @@ void loop()
   {
     case scr_main:
       checkMainButton();
-      if (millis() - tim_gr > 16)
-      {
-        tim_gr = millis();
-        drawMain();
-      }
       prinMainTemp();
       break;
 
     case scr_lu:
-      checkBackButton();
+      
       if (millis() - tim_gr > 16)
       {
         tim_gr = millis();
         graph_lu();
       }
+      checkBackButton();
       break;
 
     case scr_ru:
-      checkBackButton();
+      
       if (millis() - tim_gr > 16)
       {
         tim_gr = millis();
         graph_ru();
       }
+      checkBackButton();
       break;
 
     case scr_ld:
-      checkBackButton();
+      
       if (millis() - tim_gr > 16)
       {
         tim_gr = millis();
         graph_ld();
       }
+      checkBackButton();
       break;
 
     case scr_rd:
-      checkBackButton();
+      
       if (millis() - tim_gr > 16)
       {
         tim_gr = millis();
         graph_rd();
       }
+      checkBackButton();
       break;
   }
 }
