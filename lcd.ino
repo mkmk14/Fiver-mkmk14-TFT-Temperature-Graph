@@ -53,22 +53,30 @@ void prinMainTemp()
   myGLCD.setFont(BigFont);
   myGLCD.setBackColor(0, 255, 0);
   myGLCD.setColor(255, 255, 255);
-  myGLCD.print(String(temp[0])+ String((char)247)+"C", 70, 85);
+  myGLCD.print(String(temp[0]), 60, 85);
+  myGLCD.print(String("o"), 92, 81);  
+  myGLCD.print(String("C"), 104, 85);
 
   myGLCD.setFont(BigFont);
   myGLCD.setBackColor(0, 255, 0);
   myGLCD.setColor(255, 255, 255);
-  myGLCD.print(String(temp[1])+ String((char)247)+"C", 210, 85);
+  myGLCD.print(String(temp[1]), 200, 85);
+  myGLCD.print(String("o"), 232, 81);  
+  myGLCD.print(String("C"), 244, 85);
+  
+  myGLCD.setFont(BigFont);
+  myGLCD.setBackColor(0, 255, 0);
+  myGLCD.setColor(255, 255, 255);
+  myGLCD.print(String(temp[2]), 60, 185);
+  myGLCD.print(String("o"), 92, 181);  
+  myGLCD.print(String("C"), 104, 185);
 
   myGLCD.setFont(BigFont);
   myGLCD.setBackColor(0, 255, 0);
   myGLCD.setColor(255, 255, 255);
-  myGLCD.print(String(temp[2])+ String((char)247)+"C", 70, 185);
-
-  myGLCD.setFont(BigFont);
-  myGLCD.setBackColor(0, 255, 0);
-  myGLCD.setColor(255, 255, 255);
-  myGLCD.print(String(temp[3])+ String((char)247)+"C", 210, 185);
+  myGLCD.print(String(temp[3]), 200, 185);
+  myGLCD.print(String("o"), 232, 181);  
+  myGLCD.print(String("C"), 244, 185);
 }
 void checkBackButton()
 {
